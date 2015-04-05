@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/textstat'
+
+MOST_USED = 10
+
+def pretty_int(int)
+  int.to_s.reverse.scan(/.{1,3}/).join('.').reverse
+end
+
+stats = TextStat.new
+ARGF.each { |l| stats << l }
+
+puts "
+  unique words: #{pretty_int stats.count_unique_words}
+  average word length: #{stats.average_word_length}
+  most used words: #{stats.most_used(MOST_USED).join(', ')}
+"
