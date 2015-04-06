@@ -13,7 +13,11 @@ class TextStat
     end
   end
 
-  def count_unique_words
+  def total_words
+    @histogram.values.inject &:+
+  end
+
+  def unique_words
     @histogram.size
   end
 
@@ -22,8 +26,11 @@ class TextStat
   end
 
   def average_word_length
-    total = @histogram.values.inject &:+
-    @histogram.map { |word, count| word.length * count }.inject(&:+) / total
+    @histogram.map { |word, count| word.length * count }.inject(&:+) / total_words
+  end
+
+  def repetition_rate
+    (total_words.to_f / unique_words).round 2
   end
 
 

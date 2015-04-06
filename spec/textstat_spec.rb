@@ -7,9 +7,15 @@ describe TextStat do
     @stat = TextStat.new('./spec/shakespeare.txt')
   end
 
-  describe '#count_unique_words' do
+  describe '#total_words' do
+    it 'counts the total words' do
+      expect(@stat.total_words).to eq 904061
+    end
+  end
+
+  describe '#unique_words' do
     it 'counts unique words' do
-      expect(@stat.count_unique_words).to eq 59723
+      expect(@stat.unique_words).to eq 59723
     end
   end
 
@@ -33,11 +39,10 @@ describe TextStat do
     end
   end
 
-  # total_words @stat
-  # unique_words @stat
-  # average_word_length @stat
-  # most_used @stat, 10
-  # variation @stat  # unique / total
-  # report @stat
+  describe '#repetition_rate' do
+    it 'returns the ratio of how often words are reused' do
+      expect(@stat.repetition_rate).to eq 15.14
+    end
+  end
 
 end

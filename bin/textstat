@@ -12,7 +12,9 @@ stats = TextStat.new
 ARGF.each { |l| stats << l }
 
 puts "
-  unique words: #{pretty_int stats.count_unique_words}
+  total words: #{pretty_int stats.total_words}
+  unique words: #{pretty_int stats.unique_words}
   average word length: #{stats.average_word_length}
   most used words: #{stats.most_used(MOST_USED).join(', ')}
+  word repetition rate: #{stats.repetition_rate}
 "

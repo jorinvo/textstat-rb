@@ -24,6 +24,9 @@ or stream content to Textstat.
 
     echo 'some content' | textstat
 
+
+find . -type f -print0 | xargs -0 cat | bin/textstat
+
 #### Options
 
     --
