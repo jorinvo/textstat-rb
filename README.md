@@ -36,10 +36,6 @@ find . -type f -print0 | xargs -0 cat | bin/textstat
 
 ## Roadmap
 
-- minitest
-- contracts
-- guard
-- bin file
 - publish gem (needs gemspec)
 - rubocop
 - docker
