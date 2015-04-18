@@ -30,11 +30,6 @@ class TextStat
     @histogram.map(&weight).inject(&:+) / total_words
   end
 
-  def repetition_rate
-    (total_words.to_f / unique_words).round 2
-  end
-
-
   private
 
   def parse_file(path)

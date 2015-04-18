@@ -6,7 +6,6 @@ stats = "
   unique words: 59.723
   average word length: 4
   most used words: the, and, i, to, of, a, my, in, you, that
-  word repetition rate: 15.14
 "
 
 describe 'textstat binary' do
