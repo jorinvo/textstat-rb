@@ -3,6 +3,7 @@
 Textstat is an utility to get statistics about text content.
 
 The main reason behind this is me wanting to hack on a nice little project. Textstat happens to be well suited to explore new technologies.
+There's also a [Go version](go) of this project.
 
 
 ## Setup
@@ -70,3 +71,4 @@ MIT
 [spec]: spec/textstat_spec.rb
 [api]: lib/textstat.rb
 [pry]: https://github.com/pry/pry
+[go]: https://github.com/jorin-vogel/textstat-go
