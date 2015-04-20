@@ -3,12 +3,12 @@
 Textstat is an utility to get statistics about text content.
 
 The main reason behind this is me wanting to hack on a nice little project. Textstat happens to be well suited to explore new technologies.
-There's also a [Go version](go) of this project.
+There's also a [Go version][go] of this project.
 
 
 ## Setup
 
-- Make sure you have [Ruby](ruby) installed.
+- Make sure you have [Ruby][ruby] installed.
 - And download the code:
 `git clone https://github.com/jorin-vogel/textstat-rb.git`
 
@@ -36,7 +36,7 @@ To analyze a whole folder you could run:
 
 ### Ruby API
 
-See the [`spec/textstat_spec.rb`](spec) file for usage examples or explore the [API](api).
+See the [`spec/textstat_spec.rb`][spec] file for usage examples or explore the [API][api].
 
 It's less than 50 lines of code :wink:
 
@@ -45,7 +45,7 @@ It's less than 50 lines of code :wink:
 
 ### Requirements
 
-- [Ruby](ruby)
+- [Ruby][ruby]
 - Bundler (`gem install bundler`)
 
 ### Setup
@@ -58,7 +58,7 @@ It's less than 50 lines of code :wink:
 - Hit _enter_ to run all tests.
 - Use the guard console to run arbitrary ruby code.
 - Tests auto-rerun when files are changed.
-- Put `binding.pry` in your code to stop at this point and open [pry](pry).
+- Put `binding.pry` in your code to stop at this point and open [pry][pry].
 
 
 ## License
